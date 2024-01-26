@@ -1,0 +1,28 @@
+@mixin container($w: 1440px) {
+  max-width: $w;
+  margin: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+@mixin flexbox($w, $d, $j, $a, $wr: wrap) {
+  display: flex;
+  width: $w;
+  flex-direction: $d;
+  justify-content: $j;
+  align-items: $a;
+  flex-wrap: $wr;
+}
+@mixin gridPageContainer() {
+  @include container();
+  min-height: 100vh;
+  &-title{
+    text-align: center;
+    margin: 0 auto 2.5rem;
+  }
+  .page-default, .page-loading, .page-error {
+    @include flexbox(100%, row, center, center, nowrap)
+  }
+  .page-error {
+    color: $color-error;
+  }
+}

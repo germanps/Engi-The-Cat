@@ -1,0 +1,21 @@
+@import '../../scss/index.scss';
+
+.navbar {
+  padding: 2rem 1rem;
+  background-color: $color-secondary;
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &_item {
+      @include flexbox(100%, row, flex-start, center);
+      &--icon {
+        color: $color-primary;
+      }
+      &--link {
+        pointer-events: none;
+        margin-left: .5rem;
+      }
+    }
+  }
+}

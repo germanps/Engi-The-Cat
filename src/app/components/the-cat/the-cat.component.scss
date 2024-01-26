@@ -1,0 +1,22 @@
+@import '../../scss/index.scss';
+
+.card {
+  max-width: 400px;
+  margin: 1rem auto;
+  &-header {
+    .title, .subtitle {
+
+      font-family: $font-primay;
+    }
+  }
+  &-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .card-actions {
+    margin: 1rem auto;
+  }
+  .btn-action-reset {
+    border: 1px solid;
+  }
+}

@@ -1,0 +1,13 @@
+<app-nav></app-nav>
+<div class="dashboard-container">
+  <h1 class="dashboard-container-title">Random Cats</h1>
+  @defer (on viewport) {
+    <app-the-cat></app-the-cat>
+  } @placeholder {
+    <div class="page-default">blank page</div>
+  } @loading {
+    <div class="page-loading">Loading...</div>
+  } @error {
+    <div class="page-error-message">Algo ha salido mal, contacte con el administrador</div>
+  }
+</div>
