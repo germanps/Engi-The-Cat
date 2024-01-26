@@ -14,7 +14,7 @@
 }
 @mixin gridPageContainer() {
   @include container();
-  min-height: 100vh;
+  min-height: calc(100vh - 90px);
   &-title{
     text-align: center;
     margin: 0 auto 2.5rem;
